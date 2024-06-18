@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            height: 50vh;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .block{
+            background-color: rgba(69, 176, 211, 0.769);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first{
+            order: 1;
+            grid-area: 1/2/3/4;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="block first">This is first block with 😁</div>
+        <div class="block second">This is second block with 🤷‍♂️</div>
+        <div class="block third">This is third block with 🫤</div>
+    </div>
+</body>
+</html>
